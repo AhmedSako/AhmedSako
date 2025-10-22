@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Main.css">
+    <title>Ahmed Sako</title>
+</head>
+<body>
+    <div>
+        <div class="loader"></div>
+        <div class="nameimg">
+            <img src="./imgs/Ahmed3.png" alt="" width="160px">
+            <p class="name">Ahmed Adel</p>
+            <p class="des">مصمم جرافيك و مبرمج مواقع</p>
+        </div>
+        <div>
+            <a href="./Transfer.html" class="mains"><img src="./imgs/Group 1.png" alt="" width="280px" class="apc"></a>
+            <div>
+                <a href="#" class="mains" onclick="showProject(event)">
+                    <img src="./imgs/Group 2.png" alt="" width="280px" class="apc">
+                </a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://wa.me/+201030475763" target="_blank"><img src="./imgs/whatsapp.png" alt="" width="50px"></a>
+            <a href="https://www.facebook.com/AhmedSako001" target="_blank"><img src="./imgs/Face.png" alt="" width="50px"></a>
+            <a href="https://www.instagram.com/sako_ahmed001/" target="_blank"><img src="./imgs/Instgram.png" alt="" width="50px"></a>
+        </div>
+        <p class="made-by">Made by <a href="https://wa.me/+201030475763">Ahmed</a></p>
+    </div>
+    <script>
+        function showProject(e) {
+            e.preventDefault();
+            document.getElementById("projectBox").style.display = "block";
+        }
+        function closeProject() {
+            document.getElementById("projectBox").style.display = "none";
+        }
+    </script>
+</body>
+</html>
