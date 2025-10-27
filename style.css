@@ -33,7 +33,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 40px;
+  padding-top: 20px;
   flex-wrap: wrap; /* عشان العناصر تنزل تحت بعض لو الشاشة صغيرة */
 }
 
@@ -58,14 +58,14 @@ body {
 
 .main {
   position: relative;
-  top: 30px;
+  top: 20px;
 }
 
 /* النص */
 .text {
   text-align: center;
   color: white;
-  margin-top: 20px;
+  margin-top: -10px;
 }
 
 .name {
@@ -76,7 +76,7 @@ body {
 .des {
   font-size: clamp(14px, 2.5vw, 18px);
   color: #bfbfbf;
-  margin-top: 5px;
+  margin-top: -10px;
 }
 
 /* أيقونة واتساب */
@@ -86,7 +86,7 @@ body {
 .social {
   text-align: center;
   position: relative;
-  top: 30px;
+  top: 15px;
 }
 
 .social img {
@@ -112,10 +112,10 @@ body {
 /* 📱 ميديا كويري للموبايلات */
 @media (max-width: 600px) {
   .main img {
-    width: 140px;
+    width: 180px;
   }
   .photo {
-    width: 150px;
+    width: 180px;
   }
   .social img {
     width: 40px;
