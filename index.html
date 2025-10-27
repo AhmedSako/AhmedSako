@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Main.css">
     <title>Ahmed Sako</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <div class="loader"></div>
-        <div class="nameimg">
-            <img src="./imgs/Ahmed3.png" alt="" width="160px">
-            <p class="name">Ahmed Adel</p>
-            <p class="des">مصمم جرافيك و مبرمج مواقع</p>
-        </div>
-        <div>
-            <a href="./Transfer.html" class="mains"><img src="./imgs/Group 1.png" alt="" width="280px" class="apc"></a>
-            <div>
-                <a href="#" class="mains" onclick="showProject(event)">
-                    <img src="./imgs/Group 2.png" alt="" width="280px" class="apc">
-                </a>
-            </div>
-        </div>
-        <div class="social">
-            <a href="https://wa.me/+201030475763" target="_blank"><img src="./imgs/whatsapp.png" alt="" width="50px"></a>
-            <a href="https://www.facebook.com/AhmedSako001" target="_blank"><img src="./imgs/Face.png" alt="" width="50px"></a>
-            <a href="https://www.instagram.com/sako_ahmed001/" target="_blank"><img src="./imgs/Instgram.png" alt="" width="50px"></a>
-        </div>
-        <p class="made-by">Made by <a href="https://wa.me/+201030475763">Ahmed</a></p>
+    <div class="container">
+        <img src="./imgs/Ahmed.png" alt="Photo" class="photo">
     </div>
-    <script>
-        function showProject(e) {
-            e.preventDefault();
-            document.getElementById("projectBox").style.display = "block";
-        }
-        function closeProject() {
-            document.getElementById("projectBox").style.display = "none";
-        }
-    </script>
+    <div class="text">
+    <p class="name">Ahmed Adel</p>
+    <p class="des">مصمم جرافيك ومبرمج مواقع</p>
+    </div>
+    <div class="main">
+        <a href="./Transfer.html"><img src="./imgs/Transfer.png" alt="Transfer"></a>
+        <a href="https://ahmedsako.github.io/Mrs.ZeinabMuhamed/"><img src="./imgs/Projects.png" alt="Projects"></a>
+    </div>
+    <a href="https://wa.me/+201030475763" class="Wh"><img src="./imgs/final.gif" alt="whatsapp" width="230px"></a>
+    <div class="social">
+        <a href="https://www.facebook.com/AhmedSako001"><img src="./imgs/Facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/sako_ahmed001/"><img src="./imgs/instgram.png" alt="instgram"></a>
+        <a href="https://www.tiktok.com/@sako_ahmed"><img src="./imgs/Tiktok.png" alt="Tiktok"></a>
+    </div>
+        <script>
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const href = this.href;
+      console.log("جاري فتح الرابط بعد 3 ثواني...");
+      setTimeout(() => {
+        window.location.href = href;
+      }, 1000);
+    });
+  });
+</script>
 </body>
 </html>
