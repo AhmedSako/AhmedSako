@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Sako</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./imgs/Ahmed.png" alt="Photo" class="photo">
+    </div>
+    <div class="text">
+    <p class="name">Ahmed Adel</p>
+    <p class="des">مصمم جرافيك ومبرمج مواقع</p>
+    </div>
+    <div class="main">
+        <a href="tel:*9*7*01115034898*"><img src="./imgs/Vodafone.png" alt="Transfer"></a>
+        <a href="https://ipn.eg/S/ahmedsako/instapay/3Wodb0"><img src="./imgs/instapay.png" alt="Projects"></a>
+    </div>
+    <a href="https://wa.me/+201030475763" class="Wh"><img src="./imgs/final.gif" alt="whatsapp" width="230px"></a>
+    <div class="social">
+        <a href="https://www.facebook.com/AhmedSako001"><img src="./imgs/Facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/sako_ahmed001/"><img src="./imgs/instgram.png" alt="instgram"></a>
+        <a href="https://www.tiktok.com/@sako_ahmed"><img src="./imgs/Tiktok.png" alt="Tiktok"></a>
+    </div>
+    <div class="back">
+        <a href="./index.html">رجوع</a>
+
+    </div>
+<script>
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const href = this.href;
+      console.log("جاري فتح الرابط بعد 3 ثواني...");
+      setTimeout(() => {
+        window.location.href = href;
+      }, 1000);
+    });
+  });
+</script>
+</body>
+</html>

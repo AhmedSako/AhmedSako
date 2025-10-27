@@ -1,0 +1,123 @@
+/* الخلفية */
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #000000 0%, #2c2c2c 40%, #bfbfbf 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* الصورة الأساسية */
+.photo {
+  width: 180px;
+  max-width: 60vw;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 20px white);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* المحتوى الرئيسي */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  flex-wrap: wrap; /* عشان العناصر تنزل تحت بعض لو الشاشة صغيرة */
+}
+
+/* الأزرار (الروابط المصورة) */
+.main img {
+  width: 190px;
+  max-width: 45vw;
+  display: block;
+  padding: 10px;
+  margin: 0 auto 35px;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px white);
+  transition: 0.3s ease;
+}
+
+.main a:hover img,
+.main a:active img {
+  background-color: red;
+  filter: drop-shadow(0 0 15px red);
+}
+
+.main {
+  position: relative;
+  top: 30px;
+}
+
+/* النص */
+.text {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: clamp(20px, 3vw, 28px); /* حجم مرن حسب الشاشة */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.des {
+  font-size: clamp(14px, 2.5vw, 18px);
+  color: #bfbfbf;
+  margin-top: 5px;
+}
+
+/* أيقونة واتساب */
+.Wh { position: fixed; right: 10px; bottom: 10px; }
+
+/* مواقع التواصل */
+.social {
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.social img {
+  width: 50px;
+  max-width: 12vw;
+  margin: 5px;
+  filter: drop-shadow(0 0 10px white);
+  transition: 0.3s ease;
+}
+
+.social a:hover img,
+.social a:active img {
+  filter: drop-shadow(0 0 15px red);
+}
+
+/* زر الرجوع */
+.back {
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+/* 📱 ميديا كويري للموبايلات */
+@media (max-width: 600px) {
+  .main img {
+    width: 140px;
+  }
+  .photo {
+    width: 150px;
+  }
+  .social img {
+    width: 40px;
+  }
+}
