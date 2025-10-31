@@ -1,4 +1,3 @@
-/* الخلفية */
 body {
   min-height: 100vh;
   margin: 0;
@@ -8,7 +7,6 @@ body {
   align-items: center;
 }
 
-/* الصورة الأساسية */
 .photo {
   width: 180px;
   max-width: 60vw;
@@ -28,16 +26,14 @@ body {
   }
 }
 
-/* المحتوى الرئيسي */
 .container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
-  flex-wrap: wrap; /* عشان العناصر تنزل تحت بعض لو الشاشة صغيرة */
+  flex-wrap: wrap;
 }
 
-/* الأزرار (الروابط المصورة) */
 .main img {
   width: 190px;
   max-width: 45vw;
@@ -61,7 +57,6 @@ body {
   top: 20px;
 }
 
-/* النص */
 .text {
   text-align: center;
   color: white;
@@ -69,7 +64,7 @@ body {
 }
 
 .name {
-  font-size: clamp(20px, 3vw, 28px); /* حجم مرن حسب الشاشة */
+  font-size: clamp(20px, 3vw, 28px);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -79,10 +74,12 @@ body {
   margin-top: -10px;
 }
 
-/* أيقونة واتساب */
-.Wh { position: fixed; right: 10px; bottom: 10px; }
+.Wh { position: fixed;
+   right: 10px;
+    bottom: 10px;
+    z-index: 99999999;
+}
 
-/* مواقع التواصل */
 .social {
   text-align: center;
   position: relative;
@@ -102,17 +99,18 @@ body {
   filter: drop-shadow(0 0 15px red);
 }
 
-/* زر الرجوع */
 .back {
+  position: fixed;         /* يثبت العنصر في مكانه بالنسبة للشاشة */
+  bottom: 20px;            /* المسافة من أسفل الشاشة (غيرها زي ما تحب) */
+  left: 50%;               /* يبدأ من منتصف العرض */
+  transform: translateX(-50%); /* يظبطه في النص تمام */
   text-align: center;
-  position: relative;
-  top: 50px;
 }
 
-/* 📱 ميديا كويري للموبايلات */
+
 @media (max-width: 600px) {
   .main img {
-    width: 180px;
+    width: 130px;
   }
   .photo {
     width: 180px;
@@ -121,3 +119,16 @@ body {
     width: 40px;
   }
 }
+  button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+  button:hover {
+    background-color: #0052cc;
+  }

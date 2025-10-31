@@ -15,16 +15,16 @@
     <p class="des">مصمم جرافيك ومبرمج مواقع</p>
     </div>
     <div class="main">
-        <a href="tel:*9*7*01115034898*"><img src="./imgs/Vodafone.png" alt="Transfer"></a>
+        <a href="tel:*9*7*01030475763*"><img src="./imgs/Vodafone.png" alt="Transfer"></a>
         <a href="https://ipn.eg/S/ahmedsako/instapay/3Wodb0"><img src="./imgs/instapay.png" alt="Projects"></a>
     </div>
     <a href="https://wa.me/+201030475763" class="Wh"><img src="./imgs/final.gif" alt="whatsapp" width="230px"></a>
+        <button onclick="copyNumber()">نسخ الرقم</button>
     <div class="social">
         <a href="https://www.facebook.com/AhmedSako001"><img src="./imgs/Facebook.png" alt="Facebook"></a>
         <a href="https://www.instagram.com/sako_ahmed001/"><img src="./imgs/instgram.png" alt="instgram"></a>
         <a href="https://www.tiktok.com/@sako_ahmed"><img src="./imgs/Tiktok.png" alt="Tiktok"></a>
-    </div>
-    <div class="back">
+    </div>    <div class="back">
         <a href="./index.html">رجوع</a>
 
     </div>
@@ -39,6 +39,12 @@
       }, 1000);
     });
   });
+    function copyNumber() {
+    const number = "01030475763";
+    navigator.clipboard.writeText(number)
+      .then(() => alert("تم نسخ الرقم: " + number))
+      .catch(() => alert("فشل النسخ 😢"));
+  }
 </script>
 </body>
 </html>
