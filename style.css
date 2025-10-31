@@ -39,7 +39,7 @@ body {
   max-width: 45vw;
   display: block;
   padding: 10px;
-  margin: 0 auto 35px;
+  margin: 0 auto 25px;
   background-color: white;
   border-radius: 10px;
   filter: drop-shadow(0 0 10px white);
@@ -76,14 +76,14 @@ body {
 
 .Wh { position: fixed;
    right: 10px;
-    bottom: 10px;
+    bottom: -20px;
     z-index: 99999999;
 }
 
 .social {
   text-align: center;
   position: relative;
-  top: 15px;
+  top: 25px;
 }
 
 .social img {
@@ -100,10 +100,10 @@ body {
 }
 
 .back {
-  position: fixed;         /* يثبت العنصر في مكانه بالنسبة للشاشة */
-  bottom: 20px;            /* المسافة من أسفل الشاشة (غيرها زي ما تحب) */
-  left: 50%;               /* يبدأ من منتصف العرض */
-  transform: translateX(-50%); /* يظبطه في النص تمام */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -127,6 +127,8 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    position: relative;
+    top: 25px;
 
   }
   button:hover {
